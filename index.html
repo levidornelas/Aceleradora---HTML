@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout de Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="menu">
+            <a href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/3271/3271001.png" alt="Minha Foto" class="foto">
+            </a>
+            <p class="descricao">
+                Me chamo Levi Dornelas e sou estudante de Sistemas de informação. Atualmente no segundo período, na busca por mais conhecimento. :)
+            </p>
+            <ul>
+                <li><a href=https://www.linkedin.com/in/levi-dornelas-1834592b7/">Linkedin</a></li>
+                <li><a href="https://github.com/levidornelas">Github</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Link4</a></li>
+            </ul>
+        </nav>
+        <main class="conteudo">
+            <h1>Lista de Tarefas</h1>
+            <div class="tarefas">
+                <div class="lista-tarefas">
+                    <h2>Dia</h2>
+                    <ol id="tarefas-dia">
+                        <li class="tarefa-item">
+                            <span>Tarefa 1</span>
+                            <button class="btn-remover" onclick="removerTarefa(this)">Remover</button>
+                        </li>
+                        <li class="tarefa-item">
+                            <span>Tarefa 2</span>
+                            <button class="btn-remover" onclick="removerTarefa(this)">Remover</button>
+                        </li>
+                    </ol>
+                    <input type="text" id="nova-tarefa-dia" placeholder="Nova tarefa">
+                    <button onclick="adicionarTarefa('dia')">Adicionar</button>
+                </div>
+                <div class="lista-tarefas">
+                    <h2>Noite</h2>
+                    <ol id="tarefas-noite">
+                        <li class="tarefa-item">
+                            <span>Tarefa A</span>
+                            <button class="btn-remover" onclick="removerTarefa(this)">Remover</button>
+                        </li>
+                        <li class="tarefa-item">
+                            <span>Tarefa B</span>
+                            <button class="btn-remover" onclick="removerTarefa(this)">Remover</button>
+                        </li>
+                    </ol>
+                    <input type="text" id="nova-tarefa-noite" placeholder="Nova tarefa">
+                    <button onclick="adicionarTarefa('noite')">Adicionar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
