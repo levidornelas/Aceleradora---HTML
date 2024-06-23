@@ -2,7 +2,6 @@ function adicionarTarefa(periodo) {
     let entradaTarefa;
     let listaTarefas;
 
-
     // Escolhendo o período em que a tarefa será adicionada
     if (periodo === 'dia') {
         entradaTarefa = document.getElementById('nova-tarefa-dia');
@@ -49,4 +48,12 @@ document.getElementById('nova-tarefa-noite').addEventListener('keydown', functio
     if (event.key === 'Enter') {
         adicionarTarefa('noite');
     }
+});
+
+document.getElementById('btn-adicionar-dia').addEventListener('click', function() {
+    adicionarTarefa('dia');
+});
+
+document.getElementById('btn-adicionar-noite').addEventListener('click', function() {
+    adicionarTarefa('noite');
 });
